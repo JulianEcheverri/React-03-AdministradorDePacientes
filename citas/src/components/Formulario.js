@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import uuid from "uuid/dist/v4";
+import PropTypes from "prop-types"
 
 const Formulario = ({crearCita}) => {
     // Hook state
@@ -114,5 +115,11 @@ const Formulario = ({crearCita}) => {
     </Fragment>
   );
 };
+
+// PropTypes 
+// Para documentar los componentes
+Formulario.protoTypes = {
+    crearCita: PropTypes.func.isRequired
+}
 
 export default Formulario;
